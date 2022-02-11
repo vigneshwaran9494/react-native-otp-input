@@ -10,8 +10,8 @@ export default class OTPInputView extends Component {
         this.fields = [];
         this.copyCodeFromClipBoardOnAndroid = () => {
             if (Platform.OS === "android") {
-               // this.checkPinCodeFromClipBoard();
-                this.timer = setInterval(this.checkPinCodeFromClipBoard, 400);
+                //this.checkPinCodeFromClipBoard();
+                //this.timer = setInterval(this.checkPinCodeFromClipBoard, 400);
             }
         };
         this.bringUpKeyBoardIfNeeded = () => {
