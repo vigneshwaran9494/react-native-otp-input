@@ -1,0 +1,80 @@
+{
+  "name": "@hirbod/react-native-otp-input",
+  "version": "2.0.4",
+  "description": "is a tiny JS library for one time passcode (OTP). Supports smart input suggestion on iOS and code autofill on Android (it will be filled when you press the copy button on the SMS notification bar)",
+  "main": "./dist/index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "build": "tsc"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "<rootDir>setup-tests.js"
+    ],
+    "testEnvironment": "jsdom",
+    "testEnvironmentOptions": {
+      "enzymeAdapter": "react16"
+    },
+    "testMatch": [
+      "<rootDir>/__tests__/*.test.js"
+    ],
+    "transform": {
+      "^.+\\.jsx$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirbod/react-native-otp-input.git"
+  },
+  "keywords": [
+    "react-native",
+    "otp",
+    "otc",
+    "one time password",
+    "one time pin",
+    "one time pincode",
+    "one time code",
+    "sms",
+    "verifcation code",
+    "phone",
+    "verification"
+  ],
+  "author": "TTT Studio (https://ttt.studio)",
+  "contributors": [
+    "Hirbod Mirjavadi (https://github.com/hirbod)",
+    "Becky Wu <becky.wu@ttt.studio> (https://github.com/BeckyWu220)",
+    "Felipe Peña <felipe@penya.cl> (http://felipe.penya.cl)"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@types/jest": "^27.4.0",
+    "@types/react": "^17.0.39",
+    "@types/react-native": "^0.66.15",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "babel-jest": "^27.5.1",
+    "enzyme": "^3.11.0",
+    "jest": "^27.5.1",
+    "jest-environment-jsdom": "^27.5.1",
+    "jest-enzyme": "^7.1.2",
+    "jsdom": "^19.0.0",
+    "react": "17.0.2",
+    "react-dom": "^17.0.2",
+    "react-native": "^0.67.2",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@react-native-clipboard/clipboard": "^1.8.5"
+  },
+  "bugs": {
+    "url": "https://github.com/hirbod/react-native-otp-input/issues"
+  },
+  "homepage": "https://github.com/hirbod/react-native-otp-input#readme"
+}
